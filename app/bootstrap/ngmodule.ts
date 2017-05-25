@@ -7,7 +7,7 @@
 import * as angular from "angular";
 import uiRouter from "@uirouter/angularjs";
 import {visualizer} from "@uirouter/visualizer";
-
+import * as agGrid from 'ag-grid';
 import {IInjectable, Ng1StateDeclaration} from "@uirouter/angularjs";
 // Types from @types/angular
 import ComponentDefinition = angular.IComponentOptions;
@@ -18,11 +18,13 @@ import IModule = angular.IModule;
 import IDirectiveFactory = angular.IDirectiveFactory;
 import Injectable = angular.Injectable;
 
+agGrid.initialiseAgGridWithAngular1(angular);
+
 // Create the angular 1 module "demo".
 //
 // Since it is exported, other parts of the application (in other files) can then import it and register things.
 // In bootstrap.js, the module is imported, and the components, services, and states are registered.
-export const ngmodule = angular.module("demo", [uiRouter, 'ui.router.upgrade']);
+export const ngmodule = angular.module("demo", [uiRouter, 'ui.router.upgrade', 'agGrid']);
 
 // Show ui-router-visualizer
 ngmodule.run(['$uiRouter', ($uiRouter) => visualizer($uiRouter) ]);

@@ -32,6 +32,7 @@
     "@angular/upgrade": "^4.0.0",
     "@uirouter/angular-hybrid": "^3.0.1",
     "@uirouter/visualizer": "^4.0.0",
+    "ag-grid": "^10.0.1",
     "angular": "<2",
     "rxjs": "^5.0.0-beta.6",
     "zone.js": "^0.8.10"
@@ -44,6 +45,7 @@
     "bootstrap": "^3.3.6",
     "d3": "^3.5.16",
     "font-awesome": "^4.5.0",
+    "protractor": "^5.1.2",
     "shx": "^0.2.2",
     "source-map-loader": "^0.2.1",
     "systemjs": "^0.19.24",

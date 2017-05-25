@@ -8,6 +8,7 @@ module.exports = {
     "vendor": [
       'angular',
       'zone.js',
+      'ag-grid',
       '@angular/common',
       '@angular/compiler',
       '@angular/core',
